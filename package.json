@@ -1,11 +1,19 @@
 {
   "name": "extra-bigbit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "BigBit provides bit manipulation functions for BigInt.",
   "main": "index.js",
-  "scripts": {
-    "test": "exit"
+  "module": "index.mjs",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.mjs"
   },
+  "scripts": {
+    "test": "exit",
+    "build": "ebuild export+main+example+wiki+readme --wikiExample=false --asciinema=false",
+    "deploy": "ebuild jsdoc+export+main+meta+example+github+publish"
+  },
+  "runkitExampleFilename": "example.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodef/extra-bigbit.git"
