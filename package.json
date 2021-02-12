@@ -1,6 +1,6 @@
 {
   "name": "extra-bigbit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "BigBit provides bit manipulation functions for BigInt.",
   "main": "index.js",
   "scripts": {
